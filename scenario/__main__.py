@@ -70,11 +70,11 @@ from telethon import Button, events
 @telethn.on(events.NewMessage(pattern="/alive"))
 async def awake(event):
   scenario = event.sender.first_name
-  scenario = "**♡ I,m scenario** \n\n"
-  scenario += "**♡ I'm Working With Awesome Speed**\n\n"
-  scenario += "**♡ Scenario: LATEST Version**\n\n"
-  scenario += "**♡ My Creator:** [TeamScenario](t.me/TeamScenario)\n\n"
-  scenario += "**♡ Python-Telegram-Bot: v13.7**\n\n"
+  scenario = "** Hum Hai MUNNA Bhaiya** \n\n"
+  scenario += "**Jalwa Hai Humara Yaha**\n\n"
+  scenario += "**Munna: LATEST Version**\n\n"
+  scenario += "**Humare Papa:** [Rachit](t.me/Hyper_x_Rachit)\n\n"
+  scenario += "**Python-Telegram-Bot: v13.7**\n\n"
   scenario_BUTTON = [
       [
           Button.url("Support", f"https://t.me/{SUPPORT_CHAT}"),
@@ -114,12 +114,12 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 HELP_MSG = "Click the button below to get help menu in your pm."
-START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+START_MSG = "Hindi Film Ke Hero Hai Hum!\n<b>Hume Koi Na Maar Sakta, Amar Hai Hum:</b> <code>{}</code>"
     
 PM_START_TEXT = """
 ────「 [Scenario](https://telegra.ph/file/7b8c52bd4c7b8b35ece20.jpg) 」────
-*Hola! {},*
-*I am {} Anime themed advance group management bot with a lot of Sexy Features.*
+*Abe Oo Bsdwale Chacha! {},*
+*I am {} King of Telegram advance group management bot with a lot of Sexy Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *users, across* `{}` *chats.*
@@ -128,15 +128,15 @@ PM_START_TEXT = """
 """
 
 GROUP_START_TEXT = """
-I'm awake already!
-Haven't slept since: {}
+Hume Koi Na Maar Skta!
+Haven't dead since: {}
 """
 
 buttons = [
     [
                         InlineKeyboardButton(
                             text=f"⚓ ❄️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❄️ ⚓",
-                            url="https://t.me/ScenarioXbot?startgroup=true")
+                            url="https://t.me/TheMunnaBhaiyaBot?startgroup=true")
                     ],
                    [
                        InlineKeyboardButton(text="☘️ ᴀʙᴏᴜᴛ ☘️", callback_data="scenario_"),
