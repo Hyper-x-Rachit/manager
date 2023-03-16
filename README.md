@@ -1,4 +1,4 @@
-# A project By TeamScenario
+# A project By HyperXRachit
 
 • A star 🌟 from you means a lot please star if you liked this project.
 <span style="color:blue">some Hello text</span>. 
@@ -17,13 +17,12 @@
 | API_ID | Get it from my.telegram.org |
 | API_HASH | Get it from my.telegram.org |
 | TOKEN | from @BotFather |
-| OWNER_ID | DM @ScenarioXbot and send /id |
+| OWNER_ID | DM @Miss_RoseBot and send /id |
 | DEV_USERS | same as OWNER_ID |
 | String | use @StringFatherBot (Telethon session)| 
 
 
-> Scenario is the most Advanced telegram bot to manage your groups. 
-Demo bot - @anonymous_4_robot
+> Munna Bhaiya Bot is the most Advanced telegram bot to manage your groups. 
 
 ## How to Deploy 
 <details>
