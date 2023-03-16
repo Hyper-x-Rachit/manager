@@ -48,7 +48,7 @@ def user_admin(permission: AdminPerms):
                 )
                 anon_callback_messages[(message.chat.id, message.message_id)] = (
                     message.reply_text(
-                        "Seems like you're anonymous, click the button below to prove your identity",
+                        "ʙʜᴀᴅᴡᴀ ʜᴀɪ ᴋᴀ ʙᴇʏ? ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ʜᴀᴛᴀ ʏᴀ ɴᴇᴇᴄʜᴇ ᴡᴀʟᴀ ʙᴜᴛᴛᴏɴ ᴅᴀʙᴀ -_-",
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [
@@ -99,7 +99,7 @@ def anon_callback_handler1(upd: Update, _: CallbackContext):
 
     if mem.status not in [ChatStatus.ADMIN.value, ChatStatus.CREATOR.value]:
         callback.answer(
-            "You're aren't admin.",
+            "Aʙᴇ ᴄʜᴏᴍᴜ ᴀᴅᴍɪɴ ɴᴀʜɪ ʜᴀɪ ᴛᴏ ᴋᴀʜᴇ ᴍᴀɪʏᴀ ᴄʜᴜᴅᴡᴀ ʀᴀʜᴀ ʜᴀɪ 😡",
             show_alert=True,
         )
         dispatcher.bot.delete_message(
@@ -107,7 +107,7 @@ def anon_callback_handler1(upd: Update, _: CallbackContext):
         )
         dispatcher.bot.send_message(
             chat_id,
-            "You lack the permissions required for this command",
+            "ᴊᴀ sᴏ ᴊᴀ 😪",
         )
 
     elif (
@@ -123,6 +123,6 @@ def anon_callback_handler1(upd: Update, _: CallbackContext):
             return cb[1](cb[0][0], cb[0][1])
     else:
         callback.answer(
-            f"You don't have required permission to do that.",
+            f"ᴊᴀ sᴏ ᴊᴀ 😪",
             show_alert=True,
         )
