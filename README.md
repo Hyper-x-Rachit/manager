@@ -23,7 +23,6 @@
 
 
 > Munna Bhaiya Bot is the most Advanced telegram bot to manage your groups. 
-Demo bot - @anonymous_4_robot
 
 ## How to Deploy 
 <details>
