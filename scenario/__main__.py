@@ -293,11 +293,11 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Support",
-                            url=f"https://t.me/{SUPPORT_CHAT}",
+                            url=f"https://t.me/MIRZAPUR_OF_TELEGRAM",
                         ),
                         InlineKeyboardButton(
                             text="Updates",
-                            url=f"https://t.me/{UPDATES_CHANNEL}",
+                            url=f"https://t.me/TheMunnaBhaiyaUPDATE",
                         ),
                     ]
                 ]
