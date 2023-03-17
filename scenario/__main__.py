@@ -117,10 +117,11 @@ HELP_MSG = "Click the button below to get help menu in your pm."
 START_MSG = "Hindi Film Ke Hero Hai Hum!\n<b>Hume Koi Na Maar Sakta, Amar Hai Hum:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [MUNNA](https://telegra.ph/file/7b8c52bd4c7b8b35ece20.jpg) 」────
+────「 [MUNNA](https://telegra.ph/file/e3ef11ab19ac7d0b24adb.jpg) 」────
 Abe Oo Bsdwale Chacha! {},
 
-I am {} King of Telegram advance group management bot with a lot of Sexy Features.
+I am {} King of Telegram 
+advance group management bot with a lot of Sexy Features.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • Uptime: `{}`
 • `{}` users, across `{}` chats.
