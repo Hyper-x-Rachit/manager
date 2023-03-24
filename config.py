@@ -11,16 +11,16 @@ Example - JOIN_LOGGER = os.environ.get("EVENT_LOGS", "-100828822882")
 
 
 # Token from botfather 
-TOKEN = os.environ.get("TOKEN", "")
+TOKEN = os.environ.get("TOKEN", "5638472227:AAGiLJXYT0Dl7wHLhPKLYOqP4mr2dSE6lvE")
 
 # Make a new group then add @ScenarioXbot then send /id and fill id here.
-JOIN_LOGGER = os.environ.get("EVENT_LOGS", "")
+JOIN_LOGGER = os.environ.get("EVENT_LOGS", "-1001974186329")
 
 # only one # don't remove other one.
-OWNER_ID = int(os.environ.get("OWNER_ID", "2142595466", "fill_your_id_here_")) 
+OWNER_ID = int(os.environ.get("OWNER_ID", "5807019595", "fill_your_id_here_")) 
 
 # only one # don't remove other one.
-OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "CoderX", "Your_username_here")
+OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "HYPERXRACHIT", "Your_username_here")
 
 # can add multiple with spaces
 DRAGONS = {int(x) for x in os.environ.get("DRAGONS", "").split()}
@@ -57,13 +57,13 @@ PORT = int(os.environ.get("PORT", 8443))
 CERT_PATH = os.environ.get("CERT_PATH")
 
 # Bot Owner's API_ID (From:- https://my.telegram.org/apps)
-API_ID = os.environ.get("API_ID", "")
+API_ID = os.environ.get("API_ID", "28135448")
 
 # Bot Owner's API_HASH (From:- https://my.telegram.org/apps)
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "163e1db442726e5693889696f53fc808")
 
 # Any SQL Database Link (RECOMMENDED:- PostgreSQL & https://www.elephantsql.com)
-DB_URL = os.environ.get("DATABASE_URL", "") 
+DB_URL = os.environ.get("DATABASE_URL", "postgres://yone:kushal55@ls-e6c4b74049f7e42d52874d434d6c15f85c25c82a.cmcksriktjsm.ap-south-1.rds.amazonaws.com:5432/siestarobot") 
 
 # Don't touch
 DB_URL = DB_URL.replace(
@@ -77,7 +77,7 @@ DONATION_LINK = os.environ.get("https://t.me/i_14344")
 WALL_API = os.environ.get("WALL_API", None) 
 
 To remove background of images # From:- https://www.remove.bg/
-REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "")
+REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "jUVTyeAXQ5ZbG6zvg5sUdiYq")
 
 ## More info written at right side from this line.
 
